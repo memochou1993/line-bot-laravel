@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "47619bdaf1df4ddcc833970667f3fad5",
     "packages": [
         {
             "name": "brick/math",
@@ -1750,6 +1750,88 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "linecorp/line-bot-sdk",
+            "version": "7.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/line/line-bot-sdk-php.git",
+                "reference": "e141f29cd7b9f27615d11f69e329f2b83ed70654"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/e141f29cd7b9f27615d11f69e329f2b83ed70654",
+                "reference": "e141f29cd7b9f27615d11f69e329f2b83ed70654",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-sockets": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "*",
+                "phpmd/phpmd": "2.13.0",
+                "phpstan/phpstan": "1.8.9",
+                "phpunit/phpunit": "^7||^8||^9",
+                "squizlabs/php_codesniffer": "3.7.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LINE\\Laravel\\LINEBotServiceProvider"
+                    ],
+                    "aliases": {
+                        "LINEBot": "LINE\\Laravel\\Facade\\LINEBot"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LINE\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "moznion",
+                    "email": "moznion@gmail.com",
+                    "role": "Retired"
+                },
+                {
+                    "name": "Satoru Yoshihara",
+                    "email": "vaduz0@gmail.com",
+                    "role": "Retired"
+                },
+                {
+                    "name": "Satoshi Shibuya",
+                    "email": "satosby@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Shunsuke Mori",
+                    "email": "morimorim7180@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "SDK of the LINE BOT API for PHP",
+            "homepage": "https://github.com/line/line-bot-sdk-php",
+            "keywords": [
+                "bot",
+                "line",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/line/line-bot-sdk-php/issues",
+                "source": "https://github.com/line/line-bot-sdk-php/tree/7.6.1"
+            },
+            "time": "2022-10-17T08:29:38+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5507,6 +5589,71 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "beyondcode/laravel-dump-server",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/laravel-dump-server.git",
+                "reference": "1f2452617afc64e47b3cf49978beb7beeef084df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/laravel-dump-server/zipball/1f2452617afc64e47b3cf49978beb7beeef084df",
+                "reference": "1f2452617afc64e47b3cf49978beb7beeef084df",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/http": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": ">=7.2.5",
+                "symfony/var-dumper": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "phpunit/phpunit": "^7.0|^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\DumpServer\\DumpServerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ],
+                "psr-4": {
+                    "BeyondCode\\DumpServer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondco.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Symfony Var-Dump Server for Laravel",
+            "homepage": "https://github.com/beyondcode/laravel-dump-server",
+            "keywords": [
+                "beyondcode",
+                "laravel-dump-server"
+            ],
+            "support": {
+                "issues": "https://github.com/beyondcode/laravel-dump-server/issues",
+                "source": "https://github.com/beyondcode/laravel-dump-server/tree/1.9.0"
+            },
+            "time": "2023-02-15T10:29:26+00:00"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.5.0",
